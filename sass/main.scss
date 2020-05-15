@@ -21,6 +21,8 @@ a {
   border-radius: 10px;
   border: 10px solid #4d1618;
   background-color: #ed3e37;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 569px) {
     width: 100%;
@@ -40,41 +42,57 @@ a {
   header {
     padding: 10px;
     width: 100%;
-    height: auto;
     border-bottom: 10px solid #4d1618;
     color: #ffffff;
     display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
     vertical-align: middle;
+    flex-wrap: nowrap;
 
     .circle {
       border: 3px solid #6be5fa;
       background-color: #4bbce3;
       border-radius: 50%;
-      width: 50px;
+      width: 20%;
+      max-width: 50px;
       height: 50px;
-      margin-right: 15px;
+      align-self: center;
+      margin-right: 10px;
     }
 
     h1 {
       font-size: 24px;
       margin: 0;
       align-self: center;
-    }
-
-    @media (max-width: 569px) {
-      height: 12vh;
+      align-self: center;
     }
   }
 
   main {
     padding: 10px;
     height: calc(76vh - 100px);
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+    justify-content: center;
 
     .screen {
       border: 10px solid #e1dbdf;
       border-radius: 8px;
       background-color: #ffffff;
       margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex: 6;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+        max-width: 96px;
+        max-height: 96px;
+      }
     }
 
     .controllers {
@@ -83,6 +101,10 @@ a {
       margin: 10px auto;
       background-color: #626262;
       padding: 10px;
+      display: flex;
+      flex: 4;
+      flex-direction: column;
+      justify-content: center;
 
       input[type="text"] {
         background-color: #8dc83f;
@@ -127,9 +149,17 @@ a {
       }
     }
 
-    @media (max-width: 569px) {
-      height: 76vh;
-    }
+    // @media (max-width: 569px) {
+    //   height: 76vh;
+
+    //   .screen {
+    //     height: 40vh;
+    //   }
+
+    //   .controllers {
+    //     height: 26vh;
+    //   }
+    // }
   }
 
   footer {
@@ -138,6 +168,10 @@ a {
     color: #4d1618;
     padding: 10px;
     width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
 
     p {
       font-size: 14px;
