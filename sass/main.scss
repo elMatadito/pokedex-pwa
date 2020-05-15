@@ -1,0 +1,160 @@
+body {
+  background-color: #ecf2f7;
+  text-align: center;
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+p {
+  line-height: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #ffffff;
+}
+
+.pokedex {
+  border-radius: 10px;
+  border: 10px solid #4d1618;
+  background-color: #ed3e37;
+
+  @media (max-width: 569px) {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  @media (min-width: 570px) {
+    width: 400px;
+    margin: 40px auto;
+    height: calc(100vh - 100px);
+  }
+
+  header {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border-bottom: 10px solid #4d1618;
+    color: #ffffff;
+    display: flex;
+    vertical-align: middle;
+
+    .circle {
+      border: 3px solid #6be5fa;
+      background-color: #4bbce3;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+      align-self: center;
+    }
+
+    @media (max-width: 569px) {
+      height: 12vh;
+    }
+  }
+
+  main {
+    padding: 10px;
+    height: calc(76vh - 100px);
+
+    .screen {
+      border: 10px solid #e1dbdf;
+      border-radius: 8px;
+      background-color: #ffffff;
+      margin: 0 auto;
+    }
+
+    .controllers {
+      border-radius: 10px;
+      border: 5px solid #363636;
+      margin: 10px auto;
+      background-color: #626262;
+      padding: 10px;
+
+      input[type="text"] {
+        background-color: #8dc83f;
+        display: block;
+        border-radius: 4px;
+        border: none;
+        width: 100%;
+        padding: 4px 10px;
+        font-family: "Press Start 2P", cursive;
+
+        &::placeholder {
+          color: #363636;
+        }
+
+        &:focus,
+        &:active {
+          outline: 0;
+        }
+      }
+      .pokemon-list {
+        text-align: left;
+        margin-top: 10px;
+        background-color: #8dc83f;
+        width: 100%;
+        padding: 0px;
+        border-radius: 4px;
+        max-height: 200px;
+        overflow-x: auto;
+
+        p {
+          font-family: "Press Start 2P", cursive;
+          margin: 0;
+          padding: 4px 10px;
+
+          &.selected,
+          &:hover {
+            background: #363636;
+            color: #8dc83f !important;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 569px) {
+      height: 76vh;
+    }
+  }
+
+  footer {
+    height: auto;
+    border-top: 10px solid #4d1618;
+    color: #4d1618;
+    padding: 10px;
+    width: 100%;
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    @media (max-width: 569px) {
+      height: 12vh;
+    }
+  }
+}
+
+input,
+input:active,
+input:focus,
+input:focus-within,
+input:hover,
+input:visited {
+  font-size: 16px !important;
+}

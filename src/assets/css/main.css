@@ -1,0 +1,193 @@
+body {
+  background-color: #ecf2f7;
+  text-align: center;
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+p {
+  line-height: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #ffffff;
+}
+
+.pokedex {
+  border-radius: 10px;
+  border: 10px solid #4d1618;
+  background-color: #ed3e37;
+}
+
+@media (max-width: 569px) {
+  .pokedex {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 570px) {
+  .pokedex {
+    width: 400px;
+    margin: 40px auto;
+    height: calc(100vh - 100px);
+  }
+}
+
+.pokedex header {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border-bottom: 10px solid #4d1618;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+}
+
+.pokedex header .circle {
+  border: 3px solid #6be5fa;
+  background-color: #4bbce3;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.pokedex header h1 {
+  font-size: 24px;
+  margin: 0;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+}
+
+@media (max-width: 569px) {
+  .pokedex header {
+    height: 12vh;
+  }
+}
+
+.pokedex main {
+  padding: 10px;
+  height: calc(76vh - 100px);
+}
+
+.pokedex main .screen {
+  border: 10px solid #e1dbdf;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.pokedex main .controllers {
+  border-radius: 10px;
+  border: 5px solid #363636;
+  margin: 10px auto;
+  background-color: #626262;
+  padding: 10px;
+}
+
+.pokedex main .controllers input[type="text"] {
+  background-color: #8dc83f;
+  display: block;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  padding: 4px 10px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.pokedex main .controllers input[type="text"]::-webkit-input-placeholder {
+  color: #363636;
+}
+
+.pokedex main .controllers input[type="text"]::-moz-placeholder {
+  color: #363636;
+}
+
+.pokedex main .controllers input[type="text"]:-ms-input-placeholder {
+  color: #363636;
+}
+
+.pokedex main .controllers input[type="text"]::-ms-input-placeholder {
+  color: #363636;
+}
+
+.pokedex main .controllers input[type="text"]::placeholder {
+  color: #363636;
+}
+
+.pokedex main .controllers input[type="text"]:focus, .pokedex main .controllers input[type="text"]:active {
+  outline: 0;
+}
+
+.pokedex main .controllers .pokemon-list {
+  text-align: left;
+  margin-top: 10px;
+  background-color: #8dc83f;
+  width: 100%;
+  padding: 0px;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-x: auto;
+}
+
+.pokedex main .controllers .pokemon-list p {
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 4px 10px;
+}
+
+.pokedex main .controllers .pokemon-list p.selected, .pokedex main .controllers .pokemon-list p:hover {
+  background: #363636;
+  color: #8dc83f !important;
+  cursor: pointer;
+}
+
+@media (max-width: 569px) {
+  .pokedex main {
+    height: 76vh;
+  }
+}
+
+.pokedex footer {
+  height: auto;
+  border-top: 10px solid #4d1618;
+  color: #4d1618;
+  padding: 10px;
+  width: 100%;
+}
+
+.pokedex footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 569px) {
+  .pokedex footer {
+    height: 12vh;
+  }
+}
+
+input,
+input:active,
+input:focus,
+input:focus-within,
+input:hover,
+input:visited {
+  font-size: 16px !important;
+}
+/*# sourceMappingURL=main.css.map */
