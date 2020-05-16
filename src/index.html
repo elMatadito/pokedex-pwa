@@ -15,7 +15,10 @@
     <!-- Windows  -->
     <meta name="msapplication-navbutton-color" content="#ed3e37" />
     <meta name="msapplication-TileColor" content="#ed3e37" />
-    <meta name="msapplication-TileImage" content="icon-144x144.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/icon-144x144.png"
+    />
     <meta name="msapplication-config" content="browserconfig.xml" />
 
     <!-- Pinned Sites  -->
@@ -127,12 +130,11 @@
       </header>
       <main>
         <div class="screen">
-          <img id="pokemon-image"
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/44.png"
-          alt="groom"">
+          <img id="pokemon-image" class="loading"
+          src="assets/images/loading.png" alt="Pokédex"">
         </div>
         <div class="controllers">
-          <input type="text" placeholder="Pokémon Name" />
+          <!-- <input type="text" placeholder="Pokémon Name" /> -->
           <div class="pokemon-list">
             <p>Loading...</p>
           </div>
