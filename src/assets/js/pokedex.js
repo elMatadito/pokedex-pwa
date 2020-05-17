@@ -64,3 +64,7 @@ const getAllPokemons = () => {
 document.addEventListener("DOMContentLoaded", () => {
   getAllPokemons();
 });
+
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/sw.js");
+}
